@@ -5,7 +5,7 @@ options = webdriver.ChromeOptions()
 options.binary_location = '/usr/bin/brave'
 driver = webdriver.Chrome(chromeBinary, chrome_options=options)
 
-driver.get('https://app.knowledgehook.com/app/Student/cf186ebb-3bba-ea11-974a-0050568c42b6/Mission/fead35d3-3bba-ea11-974a-0050568c42b6')
+driver.get('https://app.knowledgehook.com/app/student/e32b2f69-fb65-ee11-9761-0050568c42b6/')
 
 def skipClick(x):
     while 1:
@@ -36,11 +36,11 @@ def question():
             pass
     return questionElement.get_attribute('innerHTML')
 
-skipType('//input[@placeholder="Class Code"]', 'tap9877')
-skipClick('//a[contains(text(), "Ian T")]')
-skipType('//input[@ng-attr-type="{{ ShowPassword ? ' + "'text'" + " : 'password'" + ' }}"]', 'ian4kh')
+skipType('//input[@placeholder="Class Code"]', '418867')
+skipClick('//a[contains(text(), "Sequin")]')
+skipType('//input[@ng-attr-type="{{ ShowPassword ? ' + "'text'" + " : 'password'" + ' }}"]', 'now23')
 skipClick('//button[@ng-click="SetLocation(' + "'Home'" + ')"]')
-skipClick('//a[@href="/app/Student/cf186ebb-3bba-ea11-974a-0050568c42b6/Gameplay/Mission/fead35d3-3bba-ea11-974a-0050568c42b6/2"]')
+skipClick('//a[@href="/app/student/e32b2f69-fb65-ee11-9761-0050568c42b6/gameplay/skill/924f96d1-2599-ee11-9a33-0050569ebc32?branchid=6fdc61fa-4acc-ea11-974a-0050568c42b6&courseid=99c54417-13ef-4b70-bdb0-019f8a422a57"]')
 print('first skip')
 skipClick('//button[@class="btn btn-lg btn-primary btnCloseWorkedExample"]')
 print('second skip')
